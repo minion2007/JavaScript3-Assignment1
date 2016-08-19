@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Like and Unlike</title>
+ <style>
+   #myButton{
+   width:90px;
+   height:30px;
+   font-weight:bold;
+   border-radius:5px;
+  }
+ </style>
+ <script>
+   var property=document.getElementById("myButton");
+   function changeButton(b){
+    if (b.value == "Like")
+   {b.value = "Unlike" 
+   b.style="background-color:red";	
+	}
+   else
+	{b.value = "Like"
+	b.style="background-color:green";	
+	}
+	 }
+  </script>
+</head>
+<body>
+   <input type="button" id="myButton" value="Like" style="background-color:green" onclick="return changeButton(this);" >
+</body>
+</html>
